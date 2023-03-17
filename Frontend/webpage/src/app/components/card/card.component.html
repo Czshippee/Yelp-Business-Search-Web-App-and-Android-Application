@@ -1,0 +1,124 @@
+<div class="container bg-white border border-light rounded-4" id="detailTab">
+    <div id="card_head">
+        <span class="material-icons" style="color: rgb(0, 0, 0);" (click)="arrow_back()"> arrow_back </span>
+        <h2 class="text-center">{{card_contents.card_Name}}</h2>
+    </div>
+    <mat-tab-group mat-align-tabs="center" backgroundColor="accent">
+        <mat-tab label="Business details">
+            <div id="deteail_result">
+                <div id="display_card">
+                    <div class="row" id="card_info">
+                        <div class="text-center mt-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Address</b></div>
+                            <div class="card_info_detail_content">{{card_contents.card_Address}}</div>
+                        </div>
+                        <div class="text-center mt-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Category</b></div>
+                            <div class="card_info_detail_content">{{card_contents.card_Category}}</div>
+                        </div>
+                        <div class="text-center mt-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Phone number</b></div>
+                            <div class="card_info_detail_content">{{card_contents.card_Phonenumber}}</div>
+                        </div>
+                        <div class="text-center mt-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Price</b></div>
+                            <div class="card_info_detail_content">{{card_contents.card_Price}}</div>
+                        </div>
+                        <div class="text-center mt-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Status</b></div>
+                            <div class="card_info_detail_content"id={{card_contents.card_openStatus}}>{{card_contents.card_openText}}</div>
+                        </div>
+                        <div class="text-center mt-3 mb-3 col-md-6">
+                            <div class="card_info_detail_title"><b>Visit yelp for more</b></div>
+                            <div class="card_info_detail_content"><a href={{card_contents.card_Moreinfo}} target="_blank">Business Link</a></div>
+                        </div>
+                        <!-- https://getbootstrap.com/docs/5.0/components/modal/ -->
+                        <!-- https://stackblitz.com/edit/lx7zff?file=index.html,index.js -->
+                        <!-- Static backdrop  -->
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Reserve Now</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" 
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <strong class="modal-title fs-5" id="staticBackdropLabel">Reservation form</strong>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3 text-center"><h2>{{card_contents.card_Name}}</h2></div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="reserve-email" class="col-form-label">Email</label>
+                                                <input type="text" class="form-control is-invalid" id="reserve-email" required>
+                                                <div class="invalid-feedback">
+                                                  Email is required
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="reserve-date" class="col-form-label">Date</label>
+                                                <input type="date" class="form-control is-invalid" id="reserve-date" required>
+                                                <div class="invalid-feedback">
+                                                  Data is required
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="reserve-time" class="col-form-label">Time</label>
+                                                <input type="time" class="form-control is-invalid" id="reserve-time" required>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-danger">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3 col-md-12">
+                            <div>
+                                Share on:
+                            </div>
+                        </div>
+                    </div>
+                    <!-- https://getbootstrap.com/docs/5.0/components/carousel/ -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src={{card_contents.card_Images0}} class="d-block w-100">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src={{card_contents.card_Images1}} class="d-block w-100">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src={{card_contents.card_Images2}} class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Map location">
+            <div class="my-google-map">
+                <google-map [options]="mapOptions">
+                    <map-marker [position]="marker.position"></map-marker>
+                </google-map>    
+            </div>
+        </mat-tab>
+        <mat-tab label="Reviews">
+            Content 3
+        </mat-tab>
+    </mat-tab-group>
+</div>

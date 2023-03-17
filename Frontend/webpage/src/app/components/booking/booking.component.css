@@ -1,0 +1,41 @@
+#reserveTable{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resertableEle{
+    width: 50%;
+}
+
+#noreserveTable{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color:red;
+}
+
+.rownum{
+    width: 5%;
+}
+.rowname{
+    width: 25%;
+}
+.rowdate{
+    width: 20%;
+}
+.rowtime{
+    width: 20%;
+}
+.rowemail{
+    width: 25%;
+}
+.rowdelete{
+    width: 5%;
+}
+
+@media screen and (max-width: 600px){
+    #resertableEle{
+        width: 90%;
+    }
+}

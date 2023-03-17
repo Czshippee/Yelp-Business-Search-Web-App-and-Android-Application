@@ -1,0 +1,21 @@
+<!-- navbar -->
+<!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+<nav class="navbar navbar-expand bg-white">
+  <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['./search']" routerLinkActive="border border-dark rounded-4">Search</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['./bookings']" routerLinkActive="border border-dark rounded-4">My Bookings</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
