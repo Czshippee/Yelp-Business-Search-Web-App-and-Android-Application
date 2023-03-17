@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/tab_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Yelp.AppBarOverlay"
+        android:background="@color/red"
+        android:navigationIcon="@drawable/arrow_back">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tab_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:navigationIcon="@drawable/arrow_back">
+
+            <TextView
+                android:id="@+id/twitter_link"
+                android:layout_width="10pt"
+                android:layout_height="10pt"
+                android:layout_gravity="right"
+                android:layout_marginRight="5pt"
+                android:background="@drawable/twitter" />
+
+            <TextView
+                android:id="@+id/facebook_link"
+                android:layout_width="10pt"
+                android:layout_height="10pt"
+                android:layout_gravity="right"
+                android:layout_marginRight="5pt"
+                android:background="@drawable/facebook" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/frame_layout1"/>
+    </androidx.viewpager.widget.ViewPager>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

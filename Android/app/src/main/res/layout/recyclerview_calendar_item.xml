@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/bookid"
+        android:layout_width="25pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="40pt"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/bookdate"
+        android:layout_width="30pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/booktime"
+        android:layout_width="25pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/bookemail"
+        android:layout_width="25pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="5pt" />
+
+</LinearLayout>

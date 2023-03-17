@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/tablegray">
+
+    <TextView
+        android:id="@+id/serial_number"
+        android:layout_width="25pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="8pt" />
+
+    <ImageView
+        android:id="@+id/business_image"
+        android:layout_width="25pt"
+        android:layout_height="25pt"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_width="40pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="35pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="35pt"
+        android:layout_height="25pt"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+</LinearLayout>

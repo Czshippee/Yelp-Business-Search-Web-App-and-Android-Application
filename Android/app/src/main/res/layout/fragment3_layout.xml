@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment3">
+
+    <TextView
+        android:id="@+id/comment1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/comment1_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment1_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/comment2_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/comment2_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment2_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/comment3_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/comment3_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment3_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/comment3_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+
+</LinearLayout>

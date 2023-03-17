@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Yelp</string>
+    <string name="app_title"><font color='#FFFFFF'>Yelp</font></string>
+    <string name="form_title">Business Search</string>
+    <string name="autoCompleteTextView">KeyWord <font color='#FF0000'>*</font></string>
+    <string name="form_distance">Distance</string>
+    <string name="form_category">Category <font color='#FF0000'>*</font></string>
+    <string name="form_location">Location <font color='#FF0000'>*</font></string>
+    <string name="form_autodetect">Auto-detect my location</string>
+    <string name="table_result">Results</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="reset_button">RESET</string>
+    <string name="title_activity_detailed">DetailedActivity</string>
+
+
+    <string name="tab_text_1">BUSINESS DETAILS</string>
+    <string name="tab_text_2">MAP LOCATION</string>
+    <string name="tab_text_3">REVIEWS</string>
+    <string name="card_Address_title">Address</string>
+    <string name="card_Price_title">Price Range</string>
+    <string name="card_Phonenumber_title">Phone Number</string>
+    <string name="card_Status_title">Status</string>
+    <string name="card_Category_title">Category</string>
+    <string name="card_Moreinfo_title">Visit Yelp For More</string>
+    <string name="reserve_now">Reserve Now</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="dialog_email">Email</string>
+    <string name="dialog_time">Start Time</string>
+    <string name="dialog_email_hint">Email Id</string>
+    <string name="dialog_date_hint">mm-dd-yyyy</string>
+    <string name="dialog_date">Date</string>
+    <string name="dialog_time_hint">hh:mm</string>
+
+
+</resources>

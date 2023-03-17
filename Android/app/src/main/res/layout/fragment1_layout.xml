@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/card_Address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/card_Address_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Address_title" />
+
+    <TextView
+        android:id="@+id/card_Price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/card_Price_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Price_title" />
+
+    <TextView
+        android:id="@+id/card_Phonenumber_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/card_Phonenumber_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Phonenumber"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Phonenumber_title" />
+
+    <TextView
+        android:id="@+id/card_Status_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/card_Status_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Status_title" />
+
+    <TextView
+        android:id="@+id/card_Category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="224dp"
+        android:text="@string/card_Category_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Category_title" />
+
+    <TextView
+        android:id="@+id/card_Moreinfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="224dp"
+        android:text="@string/card_Moreinfo_title"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_Moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Moreinfo_title" />
+
+    <Button
+        android:id="@+id/tab1_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/roundshapebtn"
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:text="@string/reserve_now"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="260dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/carousel_image1"
+                android:layout_width="200dp"
+                android:layout_height="320dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/carousel_image2"
+                android:layout_width="200dp"
+                android:layout_height="320dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/carousel_image3"
+                android:layout_width="200dp"
+                android:layout_height="320dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
